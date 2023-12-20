@@ -7,11 +7,20 @@
     background-color: #FAF0E6;
       color: #352F44;
     }
+    .bar1 {
+    background-color: #352F44;
+      width: fit-content;
+      height: 50%;
+      color: #FAF0E6;
+    }
   </style>
 <body>
+  <div class="bar1">
+<div><em>chlor.space</em></div>
+    <div>{% for page in site.pages %}
+    <a href={{ page.filename }}>{{ page.title }}</a>
+{% endfor %}</div>
+  </div>
   {{ content }}
 </body>
-{% for page in site.pages %}
-    <a href={{ page.filename }}>{{ page.title }}</a>
-{% endfor %}
 </html>
