@@ -4,6 +4,9 @@
   </head>
   <style>
     * {box-sizing: border-box;}
+    div {
+    display:inline;
+    }
     body {
     background-color: white;
       color: #5e3734;
@@ -11,6 +14,7 @@
       margin:0;
       overscroll-behavior: none;
     }
+
     .bar1 {
     background-color: #5e3734;
       width: 100%;
@@ -30,6 +34,7 @@
     }
     .barlinks {
 word-spacing: 30px;
+margin-left:30px;
     }
     .bar1 a:visited {
 color: white;
@@ -39,14 +44,13 @@ color: white;
     .bar1 img {
     -webkit-filter: invert(100%);
     filter: invert(100%);
-    position: absolute;
-    top:12px;
-    
+    display:inline;
     }
     .bartitle {
       font-size: 2em;
     font-family:magic;
-    }
+    display:inline;
+ }
     
     @font-face {
     font-family:magic;
@@ -59,8 +63,6 @@ color: white;
     }
 .bar1 a {
 font-size: 20px;
-  position:absolute;
-  top:80px;
   text-align:center;
 }
       .barlinks {
@@ -70,15 +72,10 @@ word-spacing: 20px;
     .bartitle {
     font-size: 4em;
     font-family:magic;
-    top:30px;
-    position:absolute;
     }
     .bar1 img {
     -webkit-filter: invert(100%);
     filter: invert(100%);
-    position: absolute;
-    top:-10px;
-    left:-10px;
     width:70px;
     height:70px;
     }
@@ -87,8 +84,8 @@ word-spacing: 20px;
 }
   </style>
   <div class="bar1">
-<div class="bartitle"><img src="https://cdn.discordapp.com/attachments/1160992844845166675/1187083937747566713/logo25.png?ex=65959911&is=65832411&hm=3cffe060a01d04dda3d2aaad44f24b4568255fab58cc363362b9a7946da50089&" alt="chlor logo" width="50" height="50"><div style="position:absolute; left:60px;">chlor.space</div></div>
-    <div class="barlinks" style="position:absolute;top:80px;text-align:center;left:40px;"><a href="index" title="Chlor">Home</a> <a href="login" title="Chlor Login">Login</a></div></div>
+<div class="bartitle"><a href="index"><img src="https://cdn.discordapp.com/attachments/1160992844845166675/1187083937747566713/logo25.png?ex=65959911&is=65832411&hm=3cffe060a01d04dda3d2aaad44f24b4568255fab58cc363362b9a7946da50089&" alt="chlor logo" width="50" height="50"></a><div>chlor.space</div></div>
+    <div class="barlinks"><a href="index" title="Chlor">Home</a> <a href="login" title="Chlor Login">Login</a></div></div>
   </div>
 <body>
   {{ content }}
