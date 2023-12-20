@@ -14,13 +14,13 @@
       color: #FAF0E6;
     }
   </style>
-<body>
   <div class="bar1">
 <div style="font-size: 4em;"><em>chlor.space</em></div>
     <div>{% for page in site.pages %}
     <a href={{ page.filename }}>{{ page.title }}</a>
 {% endfor %}</div>
   </div>
+<body>
   {{ content }}
 </body>
 </html>
