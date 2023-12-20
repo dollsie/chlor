@@ -5,18 +5,21 @@
   <style>
     * {box-sizing: border-box;}
     body {
-    background-color: #FAF0E6;
-      color: #352F44;
+    background-color: white;
+      color: #5e3734;
     padding:0;
       margin:0;
       overscroll-behavior: none;
     }
     .bar1 {
-    background-color: #352F44;
+    background-color: #5e3734;
       width: 100%;
-      height: 40%;
-      color: #FAF0E6;
+      height: 23%;
+      color: white;
       display:table;
+      padding-left:10px;
+      line-height: 60px;
+      padding-top: 10px;
     }
     .bar1 a {
       color:#FAF0E6;
@@ -28,10 +31,22 @@ color: #FAF0E6;
       background-color: transparent;
   text-decoration: none;
     }
+    .bar1 img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    position: absolute;
+    top:12px;
+    
+    }
+    
+    @font-face {
+    font-family:magic;
+    src: url(https://dl.dropbox.com/scl/fi/qp0oje1xuv3pacbpixa8k/Magical-Childhood.ttf?rlkey=l540qt4a56cefqhfr7hy4b426&dl=0);
+    }
   </style>
   <div class="bar1">
-<div style="font-size: 4em;"><em>chlor.space</em></div>
-    <div>{% for page in site.pages %}
+<div style="font-size: 2em; font-family:magic;"><img src="https://cdn.discordapp.com/attachments/1160992844845166675/1187083937747566713/logo25.png?ex=65959911&is=65832411&hm=3cffe060a01d04dda3d2aaad44f24b4568255fab58cc363362b9a7946da50089&" alt="chlor logo" width="50" height="50"><div style="position:absolute; left:60px;">chlor.space</div></div>
+    <div style="position:fixed;top:60px;text-align:center;left:40px;">{% for page in site.pages %}
     <a href={{ page.filename }}>{{ page.title }}</a>
 {% endfor %}</div>
   </div>
