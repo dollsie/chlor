@@ -67,7 +67,10 @@ color: white;
     src: url(https://dl.dropbox.com/scl/fi/qp0oje1xuv3pacbpixa8k/Magical-Childhood.ttf?rlkey=l540qt4a56cefqhfr7hy4b426&dl=0);
     }
     
-    .
+    .pagecontent {
+    display:table;
+    padding:20px;
+    }
     
     @media (max-width: 1000px) {
     .bar1 {
@@ -75,13 +78,13 @@ color: white;
         height: 10%;
     }
 .bar1 a {
-font-size: 10px;
+font-size: 15px;
+margin:6px;
   text-align:center;
   
 }
       .barlinks {
 margin-left:20px;
-        font-size:10px;
       }
     .bar1 img {
     -webkit-filter: invert(100%);
@@ -97,7 +100,8 @@ margin-left:20px;
 <div class="bartitle"><a href="index"><img src="https://files.catbox.moe/t2ut7l.png" alt="chlor logo"></a></div>
     <div class="barlinks"><a href="index" title="Chlor">Home</a> <a href="profile" title="Profile">Profile</a> <a href="forum">Forums</a> <a href="posts">Posts</a> <a href="following">Following</a> <a href="msg">Messages</a>  <a href="announce">Announcements</a> <a href="help">Help</a></div></div>
   </div>
+  
 <body>
-  {{ content }}
+  <div class="pagecontent">{{ content }}</div>
 </body>
 </html>
