@@ -1,6 +1,6 @@
 ---
-title: Chlor Login
+title: Login
 layout: template
-filename: login.md
+filename: login
 --- 
 yass login page
