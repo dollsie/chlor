@@ -1,7 +1,6 @@
 ---
 title: Chlor
 layout: template
-filename: index.md
+filename: index
 --- 
-
-i have pooipies
+i hav poopies.......
