@@ -6,6 +6,10 @@ filename: login
 <html>
   <head><title>Chlor | Login</title></head>
   <style>
+    body{
+      display: flex;
+  justify-content: center;
+      }
     .loginbox {
 border-style: solid black;
       border-width:2px;
