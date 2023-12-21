@@ -69,11 +69,13 @@ color: white;
     
     .pagecontent {
     display:table;
-    padding:20px;
+    margin:30px;
+    padding:10px;
     height: 100%;
     width:100%;
     border-width: 2px;
-    border-style: solid #846c6b;
+    border-style: solid;
+    border-color:  #846c6b;
     }
     
     @media (max-width: 1000px) {
@@ -114,6 +116,34 @@ border-style: solid #846c6b;
 margin-top:58px;
 }
   </style>
+  <style>
+  .footer a {
+      color: #846c6b;
+   background-color: transparent;
+      font-size:15px;
+      text-align: center;
+    }
+    .footer img {
+  filter: invert(51%) sepia(2%) saturate(3520%) hue-rotate(314deg) brightness(85%) contrast(86%);
+    display:flex;
+    width: 10%;
+    display:table;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .footer {
+    text-align: center;
+width:100%;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 14px;
+    }
+    .footer a {
+          margin:10px;
+
+    }
+  </style>
   <div class="bar1">
 <div class="bartitle"><a href="index"><img src="https://files.catbox.moe/t2ut7l.png" alt="chlor logo"></a><img src="https://files.catbox.moe/rdd7j6.png" style="width:40;height:40;" id="img2"><input type="text" id="searchbar" placeholder="Search for Anything!"></div>
     <div class="barlinks"><a href="index" title="Chlor">Home</a> <a href="profile" title="Profile">Profile</a> <a href="forum">Forums</a> <a href="posts">Posts</a> <a href="following">Following</a> <a href="msg">Messages</a>  <a href="announce">Announcements</a> <a href="help">Help</a></div></div>
@@ -121,5 +151,6 @@ margin-top:58px;
   
 <body>
   <div class="pagecontent">{{ content }}</div>
+  <div class="footer"><a href="index" title="Chlor">Home</a> <a href="profile" title="Profile">Profile</a> <a href="forum">Forums</a> <a href="posts">Posts</a> <a href="following">Following</a> <a href="msg">Messages</a>  <a href="announce">Announcements</a> <a href="help">Help</a><br/>contact: chlorspaces@gmail.com<img src="https://files.catbox.moe/t2ut7l.png" alt="chlor logo"></div>
 </body>
 </html>
