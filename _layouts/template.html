@@ -24,7 +24,7 @@
       display:table;
       padding-left:10px;
       padding-top:0;
-      line-height: 60px;
+      line-height: 20px;
       border-style: solid;
       border-width: 7px;
       border-top:0;
@@ -53,13 +53,12 @@ color: white;
     .bar1 img {
     -webkit-filter: invert(100%);
     filter: invert(100%);
-    display:inline;
-    width: 20%;
+    display:flex;
+    width: 60%;
     }
     .bartitle {
-      font-size: 2em;
     font-family:magic;
-    display:inline;
+    display: flex;
  }
     
     @font-face {
@@ -94,9 +93,24 @@ margin:3px;
     
     }
 }
+
+ #searchbar {
+border-style: solid #846c6b;
+      border-width:2px;
+      text-align: center;
+      }
+      
+      input[type="text"] {
+    width: 400px;
+    height:40px;
+    margin-top:60px;
+}
+#img2 {
+margin-top:58px;
+}
   </style>
   <div class="bar1">
-<div class="bartitle"><a href="index"><img src="https://files.catbox.moe/t2ut7l.png" alt="chlor logo"></a></div>
+<div class="bartitle"><a href="index"><img src="https://files.catbox.moe/t2ut7l.png" alt="chlor logo"></a><img src="https://files.catbox.moe/rdd7j6.png" style="width:40;height:40;" id="img2"><input type="text" id="searchbar" placeholder="Search for Anything!"></div>
     <div class="barlinks"><a href="index" title="Chlor">Home</a> <a href="profile" title="Profile">Profile</a> <a href="forum">Forums</a> <a href="posts">Posts</a> <a href="following">Following</a> <a href="msg">Messages</a>  <a href="announce">Announcements</a> <a href="help">Help</a></div></div>
   </div>
   
