@@ -21,7 +21,7 @@ border-color: #846c6b;
   <div class="loginbox">
   <center>Log in to Chlor!</center>
 <input type="text" id="text" placeholder="Username or Email"><br>
-<input type="text" id="text" placeholder="Password"><br>
+<input type="password" id="text" placeholder="Password"><br>
   
   <input type="submit" id="button" value="Log In"><br>
   </div>
