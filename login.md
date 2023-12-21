@@ -4,7 +4,7 @@ layout: template
 filename: login
 --- 
 <html>
-  <head></head>
+  <head><title>Chlor | Login</title></head>
   <style>
     .loginbox {
 border-style: solid black;
